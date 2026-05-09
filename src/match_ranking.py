@@ -4,6 +4,8 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from typing import Any
 
+from .merge_sort import merge_sort
+
 
 @dataclass(frozen=True)
 class RankedMatch:
@@ -158,3 +160,41 @@ def _parse_date(value: Any) -> date | None:
         return value.date()
 
     return None
+
+
+def rank_match_candidates(
+    target_item: Any,
+    candidates: list[Any],
+    min_score: float = 36,
+) -> list[RankedMatch]:
+    """
+    Calcula o score de cada candidato e ordena usando Merge Sort.
+
+    Args:
+        target_item: item perdido/encontrado usado como referência.
+        candidates: lista de possíveis matches já filtrados por status, categoria e local.
+        min_score: pontuação mínima para manter um candidato como um match.
+
+    Returns:
+        Lista de RankedMatch em ordem decrescente de score.
+    """
+    ranked_matches = []
+
+    for candidate in candidates:
+        score = calculate_similarity_score(target_item, candidate)
+
+        if score >= min_score:
+            ranked_matches.append(RankedMatch(item=candidate, score=score))
+
+    return merge_sort(ranked_matches, key=lambda match: match.score, reverse=True)
+
+
+def get_ranked_items(
+    target_item: Any,
+    candidates: list[Any],
+    min_score: float = 36,
+) -> list[Any]:
+    """Retorna apenas os matches, já ordenados por similaridade."""
+    ranked_matches = rank_match_candidates(target_item, candidates, min_score=min_score)
+
+    return [ranked_match.item for ranked_match in ranked_matches]
