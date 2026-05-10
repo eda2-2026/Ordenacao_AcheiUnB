@@ -69,7 +69,7 @@ def teste6():
 # Demonstra que o candidato mais parecido deve ter score maior que candidato menos parecido
     target = {
         "name": "Fone bluetooth preto",
-        "description": "Fone sem fio preto perdido na biblioteca.",
+        "description": "Fone sem fio com estojo oval e borrachas pequenas.",
         "color": "Preto",
         "brand": "JBL",
         "found_lost_date": datetime(2026, 4, 10, 10, 0),
@@ -77,7 +77,7 @@ def teste6():
 
     similar_candidate = {
         "name": "Fone bluetooth preto",
-        "description": "Fone sem fio preto encontrado na biblioteca.",
+        "description": "Fone sem fio com estojo oval e borrachas pequenas.",
         "color": "Preto",
         "brand": "JBL",
         "found_lost_date": datetime(2026, 4, 11, 10, 0),
@@ -85,7 +85,7 @@ def teste6():
 
     weak_candidate = {
         "name": "Carregador de notebook",
-        "description": "Carregador encontrado no estacionamento.",
+        "description": "Carregador com cabo grosso e conector redondo.",
         "color": "Branco",
         "brand": "Dell",
         "found_lost_date": datetime(2026, 4, 11, 10, 0),
@@ -101,7 +101,7 @@ def teste7():
 # Ordena os candidatos por score decrescente
     target = {
         "name": "Fone bluetooth preto",
-        "description": "Fone sem fio preto perdido próximo à biblioteca.",
+        "description": "Fone sem fio com estojo oval e borrachas pequenas.",
         "color": "Preto",
         "brand": "JBL",
         "found_lost_date": datetime(2026, 4, 10, 10, 0),
@@ -111,7 +111,7 @@ def teste7():
         {
             "id": 1,
             "name": "Carregador de notebook",
-            "description": "Carregador encontrado em sala de aula.",
+            "description": "Carregador com cabo grosso e conector redondo.",
             "color": "Branco",
             "brand": "Dell",
             "found_lost_date": datetime(2026, 4, 10, 10, 0),
@@ -119,7 +119,7 @@ def teste7():
         {
             "id": 2,
             "name": "Fone bluetooth preto",
-            "description": "Fone sem fio preto encontrado na biblioteca.",
+            "description": "Fone sem fio com estojo oval e borrachas pequenas.",
             "color": "Preto",
             "brand": "JBL",
             "found_lost_date": datetime(2026, 4, 11, 10, 0),
@@ -127,7 +127,7 @@ def teste7():
         {
             "id": 3,
             "name": "Fone preto",
-            "description": "Item preto encontrado perto da biblioteca.",
+            "description": "Fone com estojo oval preto e borrachas pequenas.",
             "color": "Preto",
             "brand": "Sony",
             "found_lost_date": datetime(2026, 4, 12, 10, 0),
@@ -144,7 +144,7 @@ def teste8():
 # Filtra candidatos com score abaixo do mínimo (36) e ordena os restantes por score decrescente
     target = {
         "name": "Fone bluetooth preto",
-        "description": "Fone sem fio preto perdido na biblioteca.",
+        "description": "Fone sem fio com estojo oval e borrachas pequenas.",
         "color": "Preto",
         "brand": "JBL",
         "found_lost_date": datetime(2026, 4, 10, 10, 0),
@@ -154,7 +154,7 @@ def teste8():
         {
             "id": 1,
             "name": "Fone bluetooth preto",
-            "description": "Fone sem fio preto encontrado na biblioteca.",
+            "description": "Fone sem fio com estojo oval e borrachas pequenas.",
             "color": "Preto",
             "brand": "JBL",
             "found_lost_date": datetime(2026, 4, 11, 10, 0),
@@ -162,7 +162,7 @@ def teste8():
         {
             "id": 2,
             "name": "Garrafa azul",
-            "description": "Garrafa encontrada no RU.",
+            "description": "Garrafa térmica com tampa rosqueável e alça lateral.",
             "color": "Azul",
             "brand": "Stanley",
             "found_lost_date": datetime(2026, 4, 25, 10, 0),
@@ -179,7 +179,7 @@ def teste9():
 # Retorna apenas os matches ordenados (mais provável para o menos provável) a serem enviados para o usuário
     target = {
         "name": "Fone bluetooth preto",
-        "description": "Fone sem fio preto perdido na biblioteca.",
+        "description": "Fone sem fio com estojo oval e borrachas pequenas.",
         "color": "Preto",
         "brand": "JBL",
         "found_lost_date": datetime(2026, 4, 10, 10, 0),
@@ -189,7 +189,7 @@ def teste9():
         {
             "id": 1,
             "name": "Mouse vermelho",
-            "description": "Mouse encontrado no laboratório.",
+            "description": "Mouse com botão lateral e roda de rolagem.",
             "color": "Vermelho",
             "brand": "Logitech",
             "found_lost_date": datetime(2026, 4, 12, 10, 0),
@@ -197,7 +197,7 @@ def teste9():
         {
             "id": 2,
             "name": "Fone bluetooth preto",
-            "description": "Fone sem fio preto encontrado na biblioteca.",
+            "description": "Fone sem fio com estojo oval e borrachas pequenas.",
             "color": "Preto",
             "brand": "JBL",
             "found_lost_date": datetime(2026, 4, 11, 10, 0),
