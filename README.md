@@ -32,17 +32,31 @@ Quanto ao cálculo do score de similaridade, foram considerados diferentes atrib
 ## Screenshots
 A seguir estão imagens do projeto em funcionamento.
 
-### [TODO: Título da imagem (Ex: Resultado dos testes ou benchmark)]
+### Execução local do trabalho de EDA2
 
-![placeholder](docs/assets/[TODO:nome_da_imagem].png)
+![placeholder](docs/assets/imagem1.png)
 
-<!-- Davi, você pode [TODO: Adicionar uma breve descrição sobre o que a imagem acima está mostrando.] -->
+Mostra a criação e ativação do ambiente virtual + a instalação da dependência para rodar os testes automatizados.
+
+![placeholder](docs/assets/imagem2.png)
+
+Execução do script de demonstração `demo_without_ranking.py`, que simula o comportamento anterior à implementação deste trabalho. Nesse cenário, os itens candidatos já foram previamente filtrados por `status`, `categoria` e `local`, mas ainda não passam por ranqueamento com base em similaridade.
+
+![placeholder](docs/assets/imagem3.png)
+
+Execução do script de demonstração `demo.py`, que simula o comportamento após a implementação deste trabalho. Além da filtragem inicial por `status`, `categoria` e `local`, os candidatos passam a receber um score de similaridade e são ordenados de forma decrescente com o uso do Merge Sort.
+
+#### Comparação de resultados
+
+Ao comparar os dois scripts, percebe-se que `demo_without_ranking.py` apenas apresenta os itens que passaram pelos filtros iniciais, sem priorizar aqueles com maior compatibilidade com o item perdido. Já em `demo.py`, os candidatos são ranqueados conforme o score de similaridade, fazendo com que os itens mais prováveis apareçam primeiro.
+
+Também é possível observar que o item "Carregador de notebook" deixa de ser considerado um possível match na versão com ranqueamento. Embora possua a mesma data da postagem do item perdido, ele obteve score inferior ao mínimo definido de **36**, por apresentar baixa ou nula compatibilidade nos demais atributos analisados. Dessa forma, a nova implementação não apenas ordena os candidatos, mas também descarta correspondências pouco relevantes para o usuário.
 
 ### Execução local dos testes
 
-Para garantir que o cálculo de score e a ordenação estão funcionando como esperado, foram criados arquivos de testes automatizados (`test_match_ranking.py` e `test_merge_sort.py`). 
+![placeholder](docs/assets/imagem4.png)
 
-<!-- Davi, você pode adicionar uma screenshot do terminal mostrando o `pytest` passando com 100% de sucesso. -->
+Para garantir que a ordenação e o cálculo de score estão funcionando como esperado, foram criados arquivos de testes automatizados (`test_merge_sort.py` e `test_match_ranking.py`), os quais foram concluídos com sucesso.
 
 ## Instalação
 **Linguagem**: Python<br>
