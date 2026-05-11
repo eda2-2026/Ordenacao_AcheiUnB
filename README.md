@@ -106,4 +106,6 @@ Para este projeto de EDA2, o uso principal do núcleo está na validação da or
 3. Comparar os resultados obtidos através de scripts simulados, os quais evidenciam uma melhora significativa após a implementação do algoritmo.
 
 ## Outros
-Este repositório não representa o projeto AcheiUnB em si, mas sim o núcleo desacoplado desenvolvido para a disciplina de Estruturas de Dados 2 (EDA2). Sua função é concentrar a implementação do algoritmo de **Ordenação** (Merge Sort) de forma separada, facilitando testes, análise e a validação isolada do ranqueamento. A integração desse módulo ao fluxo real do AcheiUnB deverá ser realizada no repositório principal através de um Pull Request.
+Este repositório não representa o projeto AcheiUnB em si, mas sim o núcleo desacoplado desenvolvido para a disciplina de Estruturas de Dados 2 (EDA2). Sua função é concentrar a implementação do algoritmo de **Ordenação** (Merge Sort) de forma separada, facilitando testes, análise e a validação isolada do ranqueamento. A integração desse módulo ao fluxo real do AcheiUnB já foi realizada no repositório do projeto através do seguinte Pull Request:
+
+[Link para o PR de integração](https://github.com/unb-mds/2024-2-AcheiUnB/pull/314)
