@@ -10,7 +10,7 @@
 | 23/1026714  |  Euller Júlio da Silva |
 
 ## Apresentação do trabalho
-[Link para o vídeo de apresentação]([TODO: Inserir link do vídeo aqui])
+[Link para o vídeo de apresentação](https://youtu.be/HVqpWXQCbaI?si=qK-m8PqiQl9T19k4)
 
 ## Sobre
 O [AcheiUnB](https://github.com/unb-mds/2024-2-AcheiUnB) é um projeto criado para facilitar a busca e a recuperação de itens perdidos na Universidade de Brasília, permitindo que estudantes cadastrem objetos, perdidos ou encontrados, em uma plataforma mais organizada e acessível do que grupos de mensagens informais.
